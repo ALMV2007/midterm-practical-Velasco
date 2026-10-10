@@ -37,7 +37,7 @@ body {
   padding-top: 70px;
 }
 
-h1, h2, h3, h5 {
+h1, h2, h3, h5, a {
   color: var(--primary);
   line-height: 1.2;
   margin-bottom: var(--space-xs);
@@ -243,4 +243,23 @@ caption {
   padding: var(--space-xs);
   color: var(--primary);
   text-align: left;
+}
+
+section {
+  text-align: center;
+}
+
+.Food-table-image img {
+  margin: 0 auto;
+}
+
+.reviews-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 900px) {
+  #about {
+    text-align: center;
+  }
 }
