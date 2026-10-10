@@ -4,98 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD LIFE</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-<Header>
-    <a href="#home" class="site-title">FOOD LIFE</a>
-    <i class="bx bx-menu" id="menu-icon"></i>
 
-   <nav class="navbar">
-    <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-    </ul>
-   </nav>
-</Header>
+<header>
+    <a href="#about" class="site-title">FOOD LIFE</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#critique">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+</header>
 
+<main>
     <section id="about">
         <div class="Food-table-image">
-            <img src="assets/food_table.webp" alt="Food table image">
+            <img src="assets/food_table.webp" alt="Selection of dishes arranged on a wooden dining table">
         </div> 
+        <div>
           <h2>Welcome to FOOD LIFE</h2>
           <p>From hidden neighborhood joints slinging midnight comfort food 
             to pretentious high-end spots serving air on a ceramic tile, we 
             test the dishes, pay our own bills, and pull no punches. No sponsored 
             fluff, no sugar-coated reviews—just real, unvarnished takes on what’s actually 
             worth your time, money, and calories.</p>
+        </div>
     </section>
 
-    <section id="Food critique">
+    <section id="critique">
         <div class="Food-table-image">
-            <img src="assets/Food_Plate.jpe" alt="Food table image">
+            <img src="assets/Food_Plate.jpe" alt="Plated gourmet seafood entree served in a bowl">
         </div> 
-         <h2>Food critique</h2>
-         <table class="reviews-table">
-   <thead>
-    <tr>
-      <th>Restaurant</th>
-      <th>Cuisine</th>
-      <th>Signature Dish</th>
-      <th>Rating</th>
-      <th>Verdict</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-      <td>The Golden Wok</td>
-      <td>Szechuan</td>
-      <td>Mapo Tofu</td>
-      <td>4.8 / 5.0</td>
-      <td>Must Visit</td>
-    </tr>
-    <tr>
-      <td>Lucia's Trattoria</td>
-      <td>Italian</td>
-      <td>Truffle Cacio e Pepe</td>
-      <td>4.2 / 5.0</td>
-      <td>Worth It</td>
-    </tr>
-    <tr>
-      <td>Velvet & Smoke</td>
-      <td>BBQ / Fusion</td>
-      <td>Smoked Brisket Bao</td>
-      <td>2.5 / 5.0</td>
-      <td>Overpriced</td>
-    </tr>
-   </tbody>
-</table>
-         </section>
+        <h2>Food critique</h2>
+        <table class="reviews-table">
+          <caption>Recent Restaurant Reviews and Ratings</caption>
+          <thead>
+            <tr>
+              <th scope="col">Restaurant</th>
+              <th scope="col">Cuisine</th>
+              <th scope="col">Signature Dish</th>
+              <th scope="col">Rating</th>
+              <th scope="col">Verdict</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Golden Wok</td>
+              <td>Szechuan</td>
+              <td>Mapo Tofu</td>
+              <td>4.8 / 5.0</td>
+              <td>Must Visit</td>
+            </tr>
+            <tr>
+              <td>Lucia's Trattoria</td>
+              <td>Italian</td>
+              <td>Truffle Cacio e Pepe</td>
+              <td>4.2 / 5.0</td>
+              <td>Worth It</td>
+            </tr>
+            <tr>
+              <td>Velvet & Smoke</td>
+              <td>BBQ / Fusion</td>
+              <td>Smoked Brisket Bao</td>
+              <td>2.5 / 5.0</td>
+              <td>Overpriced</td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
 
-     <section id="contact">
-    <h2>Direct <span>Contact</span></h2>
+    <section id="contact">
+        <h2>Direct Contact</h2>
+        <h5>If you would like to get in touch with me, please fill out the form below and I will get back to you as soon as possible.</h5>
 
-    <h5>
-      If you would like to get in touch with me, please fill out the form below and I will get back to you as soon as possible.
-    </h5>
-
-    <form action="mailto:amvelasco@gmail.com" method="POST">
-      
-      <div class="input-box">
-        <input type="text" placeholder="Name">
-        <input type="Email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="Number" placeholder="Phone Number">
-        <input type="Subject" placeholder="Subject">
-      </div>
-      <textarea class="textarea" name="Message" id="" cols="30" rows="5" placeholder="Text Message"></textarea>
-      <div class="Button">
-          <button type="submit">Send</button>
-    </div>
-    </form>
-  </section>
+        <form action="mailto:amvelasco@gmail.com" method="POST">
+          <div class="input-box">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+          </div>
+          <div class="input-box">
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+          </div>
+          <div>
+            <label for="message">Text Message</label>
+            <textarea class="textarea" id="message" name="message" cols="30" rows="5" placeholder="Text Message" required></textarea>
+          </div>
+          <div class="Button">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+    </section>
+</main>
     
 <footer>
   <p>&copy; 2026 FOOD LIFE. Real reviews, not sponsored.</p>

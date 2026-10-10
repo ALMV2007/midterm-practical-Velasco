@@ -1,31 +1,24 @@
 :root {
-  --bg-primary: #fffdf9;         
-  --bg-surface: #f7f1e5;      
-  --bg-dark: #2b1b17;        
-  
+  --bg-color: #fffdf9;        
+  --surface-color: #f7f1e5;     
   --text-main: #2b1b17;    
   --text-muted: #5c4438;  
-  --text-light: #ffffff;   
-  
-  --brand-yellow: #d49b00;   
-  --brand-yellow-hover: #b38200; 
+  --primary: #8b4513;   
+  --accent: #d49b00; 
+  --accent-light: #fef3c7; 
   --border-color: #e2d4c0;    
 
- 
   --space-xs: 0.5rem;
   --space-sm: 1rem; 
   --space-md: 1.5rem;
   --space-lg: 2.5rem;    
-  --space-xl: 4rem;     
 
-  --font-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --text-xs: 0.875rem;
-  --text-body: 1rem;
-  --text-lg: 1.25rem;
-  --text-h2: 1.875rem;
-  --text-h1: 2.25rem;
+  --font-base: 1rem;
+  --font-sm: 0.875rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.875rem;
 }
-/*---------------------------------------*/
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -65,7 +58,7 @@ img {
   display: block;
   border-radius: 8px;
 }
-/*---------------------------------------*/
+
 header {
   position: fixed;
   top: 0;
@@ -105,7 +98,6 @@ header {
   transition: all 0.2s ease;
 }
 
-
 .site-title:hover,
 .site-title:focus,
 .navbar a:hover,
@@ -118,7 +110,7 @@ header {
 #menu-icon {
   display: none; 
 }
-/*---------------------------------------*/
+
 section {
   padding: var(--space-lg) var(--space-sm);
   max-width: 1000px;
@@ -129,7 +121,7 @@ section {
   margin-bottom: var(--space-sm);
   overflow: hidden;
 }
-/*---------------------------------------*/
+
 .reviews-table {
   width: 100%;
   border-collapse: collapse;
@@ -139,6 +131,7 @@ section {
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
 .reviews-table th, 
 .reviews-table td {
   padding: var(--space-xs) var(--space-sm);
@@ -155,7 +148,6 @@ section {
 .reviews-table tbody tr:hover {
   background-color: var(--accent-light);
 }
-
 
 form {
   display: flex;
@@ -181,7 +173,6 @@ input, textarea {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-
 input:focus, textarea:focus {
   outline: none;
   border-color: var(--accent);
@@ -204,7 +195,6 @@ button:hover, button:focus {
   outline: 2px solid var(--primary);
 }
 
-
 footer {
   text-align: center;
   padding: var(--space-md);
@@ -212,7 +202,7 @@ footer {
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
 }
-/*---------------------------------------*/
+
 @media (min-width: 600px) {
   header {
     padding: 0 var(--space-md);
@@ -226,6 +216,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 900px) {
   #about {
     display: grid;
@@ -239,4 +230,17 @@ footer {
     padding: var(--space-sm);
   }
 }
-/*---------------------------------------*/
+label {
+  display: block;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+caption {
+  font-weight: bold;
+  padding: var(--space-xs);
+  color: var(--primary);
+  text-align: left;
+}
